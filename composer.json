@@ -1,0 +1,83 @@
+{
+    "name": "ithilgers/api-export",
+    "type": "typo3-cms-extension",
+    "description": "Token-secured JSON feed API for TYPO3 records (events from sf_event_mgt, news from georgringer/news), extendable via providers",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/ithilgers/api_export",
+    "support": {
+        "issues": "https://github.com/ithilgers/api_export/issues",
+        "source": "https://github.com/ithilgers/api_export"
+    },
+    "authors": [
+        {
+            "name": "Theodor Hilgers",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "api",
+        "json",
+        "feed",
+        "export",
+        "events",
+        "news",
+        "sf_event_mgt"
+    ],
+    "require": {
+        "php": ">=8.1",
+        "typo3/cms-backend": "^12.4",
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-frontend": "^12.4"
+    },
+    "require-dev": {
+        "derhansen/sf_event_mgt": "^7.0",
+        "georgringer/news": "^12.0 || ^13.0",
+        "phpunit/phpunit": "^10.5",
+        "typo3/testing-framework": "^8.2"
+    },
+    "suggest": {
+        "derhansen/sf_event_mgt": "Required for the 'events' resource (^7.0 || ^8.0)",
+        "georgringer/news": "Required for the 'news' resource (^12.0 || ^13.0)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ithilgers\\ApiExport\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ithilgers\\ApiExport\\Tests\\": "Tests/",
+            "Ithilgers\\ApiExportTest\\": "Tests/Functional/Fixtures/Extensions/api_export_test/Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "api_export",
+            "web-dir": ".Build/public"
+        }
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin",
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        },
+        "sort-packages": true,
+        "policy": {
+            "advisories": {
+                "block": false
+            }
+        }
+    },
+    "scripts": {
+        "test:unit": "phpunit -c Build/phpunit/UnitTests.xml",
+        "test:functional": "typo3DatabaseDriver=pdo_sqlite phpunit -c Build/phpunit/FunctionalTests.xml",
+        "test": [
+            "@test:unit",
+            "@test:functional"
+        ]
+    }
+}

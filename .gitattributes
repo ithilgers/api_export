@@ -1,0 +1,5 @@
+# Excluded from release archives (Composer dist, git archive)
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/Build export-ignore
+/Tests export-ignore

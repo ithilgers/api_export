@@ -1,0 +1,98 @@
+"pages"
+,"uid","pid","title","doktype","slug","is_siteroot"
+,1,0,"Root",1,"/",1
+,10,1,"Events",254,"/events",0
+,11,10,"Events subfolder",254,"/events/subfolder",0
+,20,1,"Other events",254,"/other-events",0
+,30,1,"API clients",254,"/api-clients",0
+,40,1,"Event-Detail",1,"/event-detail",0
+,50,1,"News",254,"/news",0
+,60,1,"News-Detail",1,"/news-detail",0
+"sys_category"
+,"uid","pid","title","parent","hidden","deleted"
+,1,30,"Languages",0,0,0
+,2,30,"Spanish",1,0,0
+,3,30,"Miscellaneous",0,0,0
+,4,30,"Hidden subcategory",1,1,0
+"tx_sfeventmgt_domain_model_location"
+,"uid","pid","title","city"
+,1,10,"Town Hall","Sampletown"
+"tx_sfeventmgt_domain_model_event"
+,"uid","pid","title","teaser","startdate","enddate","enable_registration","location","sys_language_uid","l10n_parent","hidden","deleted","category","fe_group","t3ver_wsid","t3ver_oid","t3ver_state"
+,1,10,"Languages workshop","For beginners",2115194400,2115216000,1,1,0,0,0,0,1,"",0,0,0
+,2,10,"Spanish for beginners","",2116058400,0,0,0,0,0,0,0,1,"",0,0,0
+,3,10,"Other event","",2116922400,0,0,0,0,0,0,0,1,"",0,0,0
+,4,10,"Event without category","",2117872800,0,0,0,0,0,0,0,0,"",0,0,0
+,5,10,"Past languages event","",979120800,979142400,0,0,0,0,0,0,1,"",0,0,0
+,6,10,"Hidden languages event","",2118736800,0,0,0,0,0,1,0,1,"",0,0,0
+,7,20,"Event in foreign folder","",2119168800,0,0,0,0,0,0,0,1,"",0,0,0
+,8,11,"Languages in subfolder","",2119514400,0,0,0,0,0,0,0,1,"",0,0,0
+,9,10,"Languages and miscellaneous","",2120292000,0,0,0,0,0,0,0,2,"",0,0,0
+,10,10,"Translated languages workshop","",2115194400,0,0,0,1,1,0,0,1,"",0,0,0
+,11,10,"Deleted languages event","",2122192800,0,0,0,0,0,0,1,1,"",0,0,0
+,12,10,"Spanish with hidden category","",2122192800,0,0,0,0,0,0,0,1,"",0,0,0
+,13,10,"Ongoing course","",979120800,2124784800,0,0,0,0,0,0,0,"",0,0,0
+,14,10,"Members only","",2122970400,0,0,0,0,0,0,0,0,"1",0,0,0
+,15,10,"Event for all languages","",2123834400,0,0,0,-1,0,0,0,0,"",0,0,0
+,16,10,"New event in workspace","",2123834400,0,0,0,0,0,0,0,0,"",1,0,1
+,17,10,"Changed workshop in workspace","",2115194400,0,0,0,0,0,0,0,0,"",1,1,0
+"tx_news_domain_model_news"
+,"uid","pid","title","teaser","datetime","archive","sys_language_uid","hidden","deleted","fe_group"
+,1,50,"Languages news","",1739620800,0,0,0,0,""
+,2,50,"Other news","",1736942400,0,0,0,0,""
+,3,50,"Archived languages news","",959860800,978307200,0,0,0,""
+,4,50,"Internal news","",1740830400,0,0,0,0,"1"
+,5,50,"News for all languages","",1735732800,0,-1,0,0,""
+"sys_category_record_mm"
+,"uid_local","uid_foreign","tablenames","fieldname","sorting","sorting_foreign"
+,1,1,"tx_sfeventmgt_domain_model_event","category",0,1
+,2,2,"tx_sfeventmgt_domain_model_event","category",0,1
+,3,3,"tx_sfeventmgt_domain_model_event","category",0,1
+,1,5,"tx_sfeventmgt_domain_model_event","category",0,1
+,1,6,"tx_sfeventmgt_domain_model_event","category",0,1
+,1,7,"tx_sfeventmgt_domain_model_event","category",0,1
+,1,8,"tx_sfeventmgt_domain_model_event","category",0,1
+,1,9,"tx_sfeventmgt_domain_model_event","category",0,1
+,3,9,"tx_sfeventmgt_domain_model_event","category",0,2
+,3,2,"tx_sfeventmgt_domain_model_event","category",0,2
+,1,10,"tx_sfeventmgt_domain_model_event","category",0,1
+,1,11,"tx_sfeventmgt_domain_model_event","category",0,1
+,4,12,"tx_sfeventmgt_domain_model_event","category",0,1
+,1,4,"tx_other_table","category",0,1
+,1,2,"tt_content","categories",0,1
+,1,3,"tx_sfeventmgt_domain_model_event","other_field",0,1
+,1,1,"tx_news_domain_model_news","categories",0,1
+,3,2,"tx_news_domain_model_news","categories",0,1
+,1,3,"tx_news_domain_model_news","categories",0,1
+"tx_apiexport_domain_model_client"
+,"uid","pid","title","token_hash","token_hint","hidden","deleted","starttime","endtime","last_used"
+,1,30,"All events","45e55374aff72aa5e2f8d903df1fafb583e5cdb9d5918f52274dba42e7b88b15","2da8",0,0,0,0,0
+,2,30,"Languages","ed94de7de75536df160830a0e65e30151595494a4d0e5b8560ebcf300cb8c16c","4bc8",0,0,0,0,0
+,3,30,"Languages incl. subcategories","76fce7f711cd15092c3af6eca4467d8b139f7590e1ade31811e15b1aeaf1e486","f6ed",0,0,0,0,0
+,4,30,"AND conjunction","6a8f81d78986dfcef32e2fc8d6d3ccf2bfd834533c783639ca9372b9ffdaace0","a8e9",0,0,0,0,0
+,5,30,"Blocked","71e42670a817bc0f79bcf6bdbdea77f0f115711dac8fc995c878ad30fedba8dc","6383",1,0,0,0,0
+,6,30,"Expired","491f593a27810a1050522f4dfe11f4fe89723a29f8a3bb08453dd346df27da27","d59d",0,0,0,978307200,0
+,7,30,"Not yet valid","e27e84644b64a5c4e1b4e5bdc3a1390005a8a498d97b3db31c48dc2cac3c6f28","e047",0,0,2120292000,0,0
+,8,30,"News only","e22ac9d6fd08d4706b860a4796d5400de956e6cdabd7612ba4470853732778a7","cd96",0,0,0,0,0
+,9,30,"Spare client","97e2668bbe92a023fbe3aeff1035f478cd069352af69ef136636a386cc60927f","d23b",0,0,0,0,0
+,10,30,"Deleted","34440604d3a5603f30cc9c758d61f84feafd8e2981e94f6141635be3a8e64344","d760",0,1,0,0,0
+,11,30,"Without folder","e17928b7d673b7e689d50d541ffe9f115e7401d3ac7d973a06cf8cad860fd891","574d",0,0,0,0,0
+,12,30,"Grant disabled","200cf938fa4122a8edfc07b76d2c922e59c066ee1d03902b602cbf1823b67659","868e",0,0,0,0,0
+"tx_apiexport_domain_model_feed"
+,"uid","pid","client","resource","storage_pages","recursive","categories","category_conjunction","category_include_subcategories","max_items","settings","detail_pid","hidden","deleted","sorting"
+,1,30,1,"events","10",0,"","or",0,0,"",0,0,0,1
+,2,30,1,"news","50",0,"","or",0,0,"",60,0,0,2
+,3,30,2,"events","10",1,"1","or",0,0,"",0,0,0,1
+,4,30,3,"events","10",0,"1","or",1,0,"",0,0,0,1
+,5,30,4,"events","10",0,"1,3","and",0,0,"",0,0,0,1
+,6,30,5,"events","10",0,"","or",0,0,"",0,0,0,1
+,7,30,6,"events","10",0,"","or",0,0,"",0,0,0,1
+,8,30,7,"events","10",0,"","or",0,0,"",0,0,0,1
+,9,30,8,"news","50",0,"1","or",0,0,"",0,0,0,1
+,10,30,9,"events","10",0,"","or",0,0,"",0,0,0,1
+,11,30,10,"events","10",0,"","or",0,0,"",0,0,0,1
+,12,30,11,"events","",0,"","or",0,0,"",0,0,0,1
+,13,30,12,"events","10",0,"","or",0,0,"",0,1,0,1
+"tx_apiexport_domain_model_detailmap"
+,"uid","pid","feed","storage_pid","detail_pid","hidden","deleted"
+,1,30,3,10,40,0,0

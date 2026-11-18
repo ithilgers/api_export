@@ -1,0 +1,16 @@
+{
+    "name": "ithilgers/api-export-test",
+    "type": "typo3-cms-extension",
+    "description": "Test fixture: listener for ModifyFeedItemEvent.",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Ithilgers\\ApiExportTest\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "api_export_test"
+        }
+    }
+}

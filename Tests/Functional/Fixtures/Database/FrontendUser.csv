@@ -1,0 +1,6 @@
+"fe_groups"
+,"uid","pid","title"
+,1,30,"Members"
+"fe_users"
+,"uid","pid","username","password","usergroup","disable","deleted"
+,1,30,"member","",1,0,0

@@ -1,0 +1,17 @@
+# cat=basic//05; type=string; label=API base path: Path prefix of the feed URLs, e.g. api/v1 -> /api/v1/events, /api/v1/news
+basePath = api/v1
+
+# cat=basic//20; type=int+; label=Default page size: Items per request if the consumer does not pass ?limit=
+defaultLimit = 100
+
+# cat=basic//30; type=int+; label=Maximum page size: Highest allowed value for ?limit= (larger values return 400)
+maxLimit = 500
+
+# cat=security//20; type=string; label=Header name: Name of the HTTP header that carries the token
+headerName = X-Feed-Token
+
+# cat=security//30; type=int+; label=Failed attempts per IP address: Requests without a valid token that an IP address may send within the time window, further ones are answered with 429. Requests with a valid token are never blocked. 0 = no limit. Behind a proxy, configure reverseProxyIP (SYS) so that the real IP address is used
+failedAttemptsLimit = 10
+
+# cat=security//40; type=string; label=Time window for failed attempts: e.g. 15 minutes, 1 hour
+failedAttemptsInterval = 15 minutes

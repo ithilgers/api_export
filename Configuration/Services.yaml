@@ -1,0 +1,34 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Ithilgers\ApiExport\:
+    resource: '../Classes/*'
+
+  # Called via GeneralUtility::callUserFunction() (itemsProcFunc).
+  Ithilgers\ApiExport\Form\ItemsProcessor\GrantResourceItems:
+    public: true
+
+  # Caches rootlines: one instance per feed request.
+  Ithilgers\ApiExport\Feed\AnonymousPageAccess:
+    shared: false
+    public: true
+
+  Ithilgers\ApiExport\Command\ClientTokenCommand:
+    tags:
+      - name: console.command
+        command: 'api-export:client:token'
+        description: 'Generates a new token for an API client and prints it once.'
+        schedulable: false
+
+  # Tag all feed providers automatically ...
+  _instanceof:
+    Ithilgers\ApiExport\Feed\FeedProviderInterface:
+      tags: ['apiexport.provider']
+
+  # ... and pass them to the registry as an iterator.
+  Ithilgers\ApiExport\Feed\FeedProviderRegistry:
+    arguments:
+      $providers: !tagged_iterator apiexport.provider

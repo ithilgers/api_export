@@ -1,0 +1,82 @@
+<T3DataStructure>
+    <ROOT>
+        <type>array</type>
+        <el>
+            <displayMode>
+                <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.events.displayMode</label>
+                <description>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.events.displayMode.description</description>
+                <config>
+                    <type>select</type>
+                    <renderType>selectSingle</renderType>
+                    <default>current_future</default>
+                    <items>
+                        <numIndex index="0">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.events.displayMode.current_future</label>
+                            <value>current_future</value>
+                        </numIndex>
+                        <numIndex index="1">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.events.displayMode.future</label>
+                            <value>future</value>
+                        </numIndex>
+                        <numIndex index="2">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.events.displayMode.past</label>
+                            <value>past</value>
+                        </numIndex>
+                        <numIndex index="3">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.events.displayMode.all</label>
+                            <value>all</value>
+                        </numIndex>
+                    </items>
+                </config>
+            </displayMode>
+            <orderField>
+                <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField</label>
+                <config>
+                    <type>select</type>
+                    <renderType>selectSingle</renderType>
+                    <default>startdate</default>
+                    <items>
+                        <numIndex index="0">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField.startdate</label>
+                            <value>startdate</value>
+                        </numIndex>
+                        <numIndex index="1">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField.enddate</label>
+                            <value>enddate</value>
+                        </numIndex>
+                        <numIndex index="2">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField.title</label>
+                            <value>title</value>
+                        </numIndex>
+                        <numIndex index="3">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField.crdate</label>
+                            <value>crdate</value>
+                        </numIndex>
+                        <numIndex index="4">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField.tstamp</label>
+                            <value>tstamp</value>
+                        </numIndex>
+                    </items>
+                </config>
+            </orderField>
+            <orderDirection>
+                <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderDirection</label>
+                <config>
+                    <type>select</type>
+                    <renderType>selectSingle</renderType>
+                    <default>asc</default>
+                    <items>
+                        <numIndex index="0">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderDirection.asc</label>
+                            <value>asc</value>
+                        </numIndex>
+                        <numIndex index="1">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderDirection.desc</label>
+                            <value>desc</value>
+                        </numIndex>
+                    </items>
+                </config>
+            </orderDirection>
+        </el>
+    </ROOT>
+</T3DataStructure>

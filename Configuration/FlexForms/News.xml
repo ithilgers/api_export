@@ -1,0 +1,74 @@
+<T3DataStructure>
+    <ROOT>
+        <type>array</type>
+        <el>
+            <archiveRestriction>
+                <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.news.archiveRestriction</label>
+                <description>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.news.archiveRestriction.description</description>
+                <config>
+                    <type>select</type>
+                    <renderType>selectSingle</renderType>
+                    <default>active</default>
+                    <items>
+                        <numIndex index="0">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.news.archiveRestriction.active</label>
+                            <value>active</value>
+                        </numIndex>
+                        <numIndex index="1">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.news.archiveRestriction.archived</label>
+                            <value>archived</value>
+                        </numIndex>
+                        <numIndex index="2">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.news.archiveRestriction.all</label>
+                            <value></value>
+                        </numIndex>
+                    </items>
+                </config>
+            </archiveRestriction>
+            <orderField>
+                <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField</label>
+                <config>
+                    <type>select</type>
+                    <renderType>selectSingle</renderType>
+                    <default>datetime</default>
+                    <items>
+                        <numIndex index="0">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField.datetime</label>
+                            <value>datetime</value>
+                        </numIndex>
+                        <numIndex index="1">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField.title</label>
+                            <value>title</value>
+                        </numIndex>
+                        <numIndex index="2">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField.crdate</label>
+                            <value>crdate</value>
+                        </numIndex>
+                        <numIndex index="3">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderField.tstamp</label>
+                            <value>tstamp</value>
+                        </numIndex>
+                    </items>
+                </config>
+            </orderField>
+            <orderDirection>
+                <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderDirection</label>
+                <config>
+                    <type>select</type>
+                    <renderType>selectSingle</renderType>
+                    <default>desc</default>
+                    <items>
+                        <numIndex index="0">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderDirection.desc.newestFirst</label>
+                            <value>desc</value>
+                        </numIndex>
+                        <numIndex index="1">
+                            <label>LLL:EXT:api_export/Resources/Private/Language/locallang_db.xlf:flex.orderDirection.asc</label>
+                            <value>asc</value>
+                        </numIndex>
+                    </items>
+                </config>
+            </orderDirection>
+        </el>
+    </ROOT>
+</T3DataStructure>

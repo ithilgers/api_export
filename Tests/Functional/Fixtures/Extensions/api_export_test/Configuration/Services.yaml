@@ -1,0 +1,10 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Ithilgers\ApiExportTest\EventListener\AddRecordFieldsListener:
+    tags:
+      - name: event.listener
+        identifier: 'api-export-test/add-record-fields'

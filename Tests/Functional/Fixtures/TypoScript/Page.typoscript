@@ -1,0 +1,5 @@
+# Regular page (typeNum 0) to check that the middleware passes other
+# requests through unchanged.
+page = PAGE
+page.10 = TEXT
+page.10.value = Home page

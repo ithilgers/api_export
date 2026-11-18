@@ -1,0 +1,4 @@
+"pages"
+,"uid","pid","title","doktype","slug","is_siteroot"
+,100,0,"Second root",1,"/",1
+,101,100,"Second event detail",1,"/event-detail",0

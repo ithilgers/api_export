@@ -1,0 +1,7 @@
+"be_groups"
+,"uid","pid","title","tables_select","tables_modify","db_mountpoints"
+,1,0,"Editors","tx_apiexport_domain_model_client,tx_apiexport_domain_model_feed,tx_apiexport_domain_model_detailmap","tx_apiexport_domain_model_client,tx_apiexport_domain_model_feed,tx_apiexport_domain_model_detailmap","1"
+"be_users"
+,"uid","pid","username","password","admin","usergroup","db_mountpoints","deleted","disable"
+,1,0,"admin","",1,"","",0,0
+,2,0,"editor","",0,"1","1",0,0
